@@ -11,9 +11,11 @@ public class creditclass implements payment {
         System.out.println("paid" + amount + " " + currency + "via credit card");
     }
     public void refund(double amount){
-        System.out.println
+        System.out.println("refunded" + amount + " " + currency + "to credit card"); 
     }
-    public boolean validatePayment(double amount){
+    public boolean validatePayment(){
+        System.out.println("Credit card validated");
+        return true;
         
     }
 }
